@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3003;
 app.use(cors());
 app.use(express.json());
 
-app.post('/export-trip', (req, res) => {
+app.post('/export', (req, res) => {
   const { trip, costSummary } = req.body;
   if (!trip) {
     return res.status(400).json({ success: false, error: 'Trip data is required' });
