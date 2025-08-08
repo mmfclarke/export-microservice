@@ -1,0 +1,35 @@
+{
+  "name": "trip-export-microservice",
+  "version": "1.0.0",
+  "description": "PDF export microservice for TripCraft application",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "health": "curl http://localhost:3003/health",
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "microservice",
+    "pdf",
+    "export",
+    "travel",
+    "trip"
+  ],
+  "author": "Matthew Clarke",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "pdfkit": "^0.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  }
+}
